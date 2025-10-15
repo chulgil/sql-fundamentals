@@ -1,0 +1,53 @@
+# 환경 변수 파일 (민감 정보 포함)
+.env
+*.env
+!.env.example
+
+# Docker 볼륨 및 데이터
+docker/data/
+postgres_data/
+pgadmin_data/
+
+# 백업 파일 (용량이 큰 경우)
+*.backup
+*.dump
+*.sql.gz
+backup/*.backup
+docker/init/*.backup
+
+# IDE 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS 생성 파일
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 로그 파일
+*.log
+logs/
+*.log.*
+
+# 임시 파일
+tmp/
+temp/
+*.tmp
+
+# Python (혹시 스크립트 작성 시)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Node modules (혹시 필요한 경우)
+node_modules/
+
